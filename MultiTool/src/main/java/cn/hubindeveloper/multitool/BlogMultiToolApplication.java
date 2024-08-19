@@ -10,10 +10,10 @@ import java.net.UnknownHostException;
 
 @Slf4j
 @SpringBootApplication
-public class MultiApplication {
+public class BlogMultiToolApplication {
     public static void main(String[] args) throws UnknownHostException {
         ConfigurableEnvironment env = SpringApplication
-                .run(MultiApplication.class, args)
+                .run(BlogMultiToolApplication.class, args)
                 .getEnvironment();
         log.info("server.servlet.context-path: {}",env.getProperty("server.servlet.context-path"));
         log.info("application:Access URLs: \n----------------------------------------------------------\n\t" +

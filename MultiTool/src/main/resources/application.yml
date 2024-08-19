@@ -1,7 +1,7 @@
 server:
   port: 8901
   servlet:
-    context-path: /MultiTool
+    context-path: /blog/multi-tool
 
 spring:
   application:
@@ -10,3 +10,11 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/blog_multi_tool?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&&useSSL=true
+    username: root
+    password: password
+
+
+
